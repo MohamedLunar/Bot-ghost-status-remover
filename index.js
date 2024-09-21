@@ -38,7 +38,7 @@ app.listen(port, () => {
 });
 
 const statusMessages = ["?help | Made by MohamedLunar"];
-const statusTypes = [ 'dnd'];
+const statusTypes = ['offline', 'dnd', 'online'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
 
