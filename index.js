@@ -57,9 +57,7 @@ async function login() {
 function updateStatus() {
   const currentStatus = statusMessages[currentStatusIndex];
   const currentType = statusTypes[currentTypeIndex];
-  client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Custom }],
-    status: currentType,
+  client.user.setActivity('?help | Made By MohamedLunar', { type: 'WATCHING' })
   });
   console.log('\x1b[33m[ STATUS ]\x1b[0m', `Updated status to: ${currentStatus} (${currentType})`);
   currentStatusIndex = (currentStatusIndex + 1) % statusMessages.length;
